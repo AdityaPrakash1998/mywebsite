@@ -1,0 +1,15 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "description": "Landing Page for my website",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Aditya Prakash",
+  "license": "ISC",
+  "homepage":"https://AdityaPrakash1998.github.io/mywebsite",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
