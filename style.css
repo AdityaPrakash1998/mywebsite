@@ -1,0 +1,153 @@
+body{
+  background: #333;
+  color:#fff;
+  overflow-x:hidden;
+}
+.background{
+  opacity:0.5;
+  filter:blur(5px);
+  height:100vh;
+  width:100%;
+  margin:auto;
+  background: #333;
+  text-align: center;
+  position:relative;
+}
+.background img{
+  height: 100%;
+  width:80%;
+}
+.content{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin:auto;
+  text-align: center;
+  transition: all 1000ms;
+}
+.content .logo{
+  top:40%;
+  left:50%;
+  width:170px;
+  height: 300px;
+  border-radius: 25%;
+  margin:auto;
+  margin-top: 15vh;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.content .title{
+  font-size: 2.2rem;
+  font-family: 'Segoe UI',Verdana, Geneva, sans-serif;
+}
+.content .text{
+  line-height: 1.3;
+  font-size: 1.2rem;
+}
+.about{
+  display: grid;
+  margin: auto;
+  filter:blur(1px);
+  padding:2rem 0rem;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  border-top: #fff solid 2px;
+  border-bottom: #fff solid 2px;
+}
+.about .aboutMe{
+  font-size: 1.8rem;
+  line-height: 1.2;
+  padding:1rem 0rem;
+  text-align: center;
+  margin:auto
+}
+/*  Project Heading*/
+.projectHeading{
+  background: #fff;
+  color: #333;
+  margin:10px auto;
+  padding:1rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Project Section */
+.projects{
+  display: grid;
+  grid-gap: 20px;
+  margin:auto;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: #fff solid 2px;
+  padding-bottom: 0.5rem !important;
+}
+.projectTitle{
+  filter: blur(1px);
+  font-size: 1.8rem;
+  padding:1rem 0rem;
+}
+.desc{
+  font-size: 1.2rem;
+}
+
+/* Social section */
+.social{
+  padding: 0.1rem 0rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+/* Footer p */
+.foot{
+  text-align: center;
+  padding-top: 0.1rem;
+}
+/* Utility and Media query*/
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.light{
+  background: #fff;
+  color:#333;
+  margin-left:-10px;
+}
+i{
+  padding:1rem;
+}
+@media screen and (max-width: 500px) {
+  .about{
+    padding:50% 0rem;
+    display:block;
+  }
+  .light{
+    margin-right:-8px;
+  }
+  .background{
+    background: linear-gradient(cyan,green);
+  }
+  .background img{
+    display: none;
+    padding: inherit;
+    height: 60%;
+    width:100%;
+    margin:auto;
+  }
+  .projects{
+        display: block;
+        padding: 0rem 4rem;
+        overflow-x: hidden;
+    }
+    .project{
+      border-left: #fff solid 3px;
+      border-right: #fff solid 3px;
+      margin-top: 15px;
+      filter: blur(0px);
+    }
+  .social{
+    overflow-x: hidden;
+  }
+}
