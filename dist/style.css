@@ -156,11 +156,12 @@ i{
     height: 100vw;
     width:100vh;
     margin-left: 20%;
+    margin-top:-10vw;
   }
   .logo{
-    height:210px !important;
-    width:120px !important;
-    margin-top: 5vh;
+    height:190px !important;
+    width:105px !important;
+    margin-top: 0;
   }
   .content .title{
     font-size: 1.8rem;
