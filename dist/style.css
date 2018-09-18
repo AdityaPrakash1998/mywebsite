@@ -127,7 +127,7 @@ i{
     margin-right:-8px;
   }
   .background{
-    background: linear-gradient(red,green);
+    background: linear-gradient(cyan,green);
   }
   .background img{
     display: none;
@@ -149,5 +149,24 @@ i{
     }
   .social{
     overflow-x: hidden;
+  }
+}
+@media screen and (max-height: 450px){
+  .content{
+    height: 100vw;
+    width:100vh;
+    margin-left: 20%;
+  }
+  .logo{
+    height:210px !important;
+    width:120px !important;
+  }
+  .content .title{
+    font-size: 1.8rem;
+    font-family: 'Segoe UI',Verdana, Geneva, sans-serif;
+  }
+  .content .text{
+    line-height: 1.2;
+    font-size: 1.1rem;
   }
 }
